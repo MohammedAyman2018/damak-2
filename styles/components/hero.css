@@ -17,6 +17,7 @@
   background-image: url("../../images/about-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 15px 15px 15px 15px;
   padding: 30px;
   position: relative;
@@ -33,7 +34,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 /* Buy pages */
 .appartments-hero .img-bg {
@@ -66,16 +66,16 @@
 }
 
 .appartments-hero .img-bg,
-  .appartment-hero .img-bg,
-  .villa-hero .img-bg,
-  .loft-hero .img-bg,
-  .house-hero .img-bg,
-  .duplex-hero .img-bg,
-  .property-hero .img-bg,
-  .penthouses-hero .img-bg,
-  .townhouse-hero  .img-bg{
-    height: 400px;
-  }
+.appartment-hero .img-bg,
+.villa-hero .img-bg,
+.loft-hero .img-bg,
+.house-hero .img-bg,
+.duplex-hero .img-bg,
+.property-hero .img-bg,
+.penthouses-hero .img-bg,
+.townhouse-hero .img-bg {
+  height: 400px;
+}
 
 @media screen and (min-width: 1024px) {
   .img-bg {
