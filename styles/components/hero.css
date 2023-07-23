@@ -38,7 +38,31 @@
 /* Buy pages */
 .appartments-hero .img-bg {
   background-image: url("../../images/buy/buy-apartments-in-dubai-uae.jpg");
+}
 
+.appartment-hero .img-bg {
+  background-image: url("../../images/buy/buying-an-apartment-in-dubai-uae.jpg");
+}
+.villa-hero .img-bg {
+  background-image: url("../../images/buy/buy-a-villa-in-dubai-uae.jpg");
+}
+.loft-hero .img-bg {
+  background-image: url("../../images/buy/buy-a-loft-in-dubai-uae.jpg");
+}
+.house-hero .img-bg {
+  background-image: url("../../images/buy/buy-a-house-in-dubai-uae.webp");
+}
+.duplex-hero .img-bg {
+  background-image: url("../../images/buy/buy-duplex-in-dubai-uae.jpg");
+}
+.property-hero .img-bg {
+  background-image: url("../../images/buy/buy-property-in-dubai-uae.jpeg");
+}
+.penthouses-hero .img-bg {
+  background-image: url("../../images/buy/penthouses-for-sale-in-dubai-uae.jpeg");
+}
+.townhouse-hero .img-bg {
+  background-image: url("../../images/buy/buy-a-townhouse-in-dubai-uae.jpg");
 }
 
 @media screen and (min-width: 1024px) {
