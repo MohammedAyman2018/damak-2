@@ -1,0 +1,16 @@
+.developers .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    height: 150px;
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.developers .img-wrapper:hover {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 20px 0px;
+    background-color: #fff;
+}

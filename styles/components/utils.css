@@ -1,0 +1,17 @@
+:root {
+  --bs-primary: #c8b079;
+  --bs-primary-rgb: 200, 176, 121;
+  --bs-primary-bg-subtle: #c8b079;
+  --bs-primary-text-emphasis: white;
+  --bs-primary-border-subtle: #c6aa67;
+}
+
+
+.main-heading {
+  color: #474747;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}

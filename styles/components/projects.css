@@ -1,0 +1,42 @@
+.project-card {
+  position: relative;
+  height: 320px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.badges {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.badges span {
+  padding: 6px 15px 4px 8px !important;
+}
+
+.project-card .project-card-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.project-card .project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(187 159 94 / 80%);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
+.projects-slider-slide {
+  padding: 10px;
+}

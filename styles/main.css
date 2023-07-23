@@ -1,0 +1,24 @@
+@import url("./components/utils.css");
+@import url("./components/hero.css");
+@import url("./components/slick.css");
+@import url("./components/form.css");
+@import url("./components/modal.css");
+@import url("./components/projects.css");
+@import url("./components/developers.css");
+
+@import url("./aos.css");
+@import url("./intlTelInput.min.css");
+
+.iti__flag {
+  background-image: url("../images/flags/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../images/flags/flags@2x.png");
+  }
+}
+
+.iti {
+  width: 100%;
+}
