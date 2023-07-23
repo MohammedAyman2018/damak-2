@@ -65,6 +65,18 @@
   background-image: url("../../images/buy/buy-a-townhouse-in-dubai-uae.jpg");
 }
 
+.appartments-hero .img-bg,
+  .appartment-hero .img-bg,
+  .villa-hero .img-bg,
+  .loft-hero .img-bg,
+  .house-hero .img-bg,
+  .duplex-hero .img-bg,
+  .property-hero .img-bg,
+  .penthouses-hero .img-bg,
+  .townhouse-hero  .img-bg{
+    height: 400px;
+  }
+
 @media screen and (min-width: 1024px) {
   .img-bg {
     height: 630px;
