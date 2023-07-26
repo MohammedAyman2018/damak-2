@@ -1,4 +1,4 @@
-.img-bg {
+.hero .img-bg {
   background-image: url("../../images/main-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,13 +14,21 @@
 }
 
 .about-hero .img-bg {
-  background-image: url("../../images/about-bg.jpeg");
+  /* background-image: url("../../images/about-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   border-radius: 15px 15px 15px 15px;
   padding: 30px;
   position: relative;
+}
+
+.about-hero .img-bg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .img-bg::after {
@@ -46,6 +54,18 @@
 .villa-hero .img-bg {
   background-image: url("../../images/buy/buy-a-villa-in-dubai-uae.jpg");
 }
+
+.leave-request-hero .img-bg {
+  background-image: url("../../images/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+
 .loft-hero .img-bg {
   background-image: url("../../images/buy/buy-a-loft-in-dubai-uae.jpg");
 }
@@ -75,6 +95,20 @@
 .penthouses-hero .img-bg,
 .townhouse-hero .img-bg {
   height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-hero .img-bg img {
+    position: static;
+  }
+
+  .about-hero .img-bg::after {
+    display: none;
+  }
+
+  .about-hero .img-bg p.desc {
+    color: black !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
