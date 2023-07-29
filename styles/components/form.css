@@ -9,7 +9,8 @@ input {
   border-radius: 50px 50px 50px 50px;
 }
 
-button.send {
+button.send, a.send,
+button.send-outline, a.send-outline {
   margin: 0;
   overflow: visible;
   text-transform: none;
@@ -25,16 +26,26 @@ button.send {
   min-height: 40px;
   filter: none;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(90deg, #bb9f5e, #bb9f5e, #bb9f5e, #e1d0ac);
   transition: all 0.3s ease-in-out;
-  background-size: 200% 100%;
-  background-position: 100% 0;
   user-select: none;
   flex-basis: auto;
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px 40px 40px 40px;
   padding: 14px 23px 14px 23px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button.send, a.send {
+  background: linear-gradient(90deg, #bb9f5e, #bb9f5e, #bb9f5e, #e1d0ac);
+  background-size: 200% 100%;
+  background-position: 100% 0;
   background-color: #cab37c;
+}
+
+button.send-outline, a.send-outline {
+  background-color: transparent;
+  border: 1px solid #cab37c;
   color: #ffffff;
 }

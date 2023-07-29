@@ -22,3 +22,16 @@
 .iti {
   width: 100%;
 }
+
+
+body, .accordion-body, .accordion-button, .modal-content {
+  background: #292929;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #292929
+}
+
+.nav-link, .main-heading, .accordion-button, .modal-content, .accordion-body, footer * {
+  color: white
+}

@@ -1,0 +1,13 @@
+.project-name {
+    color: white;
+    font-size: 96px;
+}
+
+.project-desc {
+    font-size: 20px;
+    color: white;
+}
+
+.project-1-hero .img-bg {
+    background-image: url('../images/projects-pages/1/banner.webp');
+}
