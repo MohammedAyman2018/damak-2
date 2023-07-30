@@ -1,0 +1,55 @@
+.project-name {
+  font-size: 96px;
+  color: white;
+}
+
+.project-desc {
+  color: white;
+  font-size: 24px;
+}
+
+.safa_two_by_damac-hero .img-bg {
+  background-image: url("../projects/damac/safa_two_by_damac/images/hero-img.webp");
+}
+
+.between-line {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #333333;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-size: 20px;
+}
+
+.between-line span {
+  background: #fff;
+  padding: 0 60px;
+  color: #474747;
+}
+
+
+.project-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-prices .text-primary {
+  font-size: 75px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 426px) {
+  .project-name {
+    font-size: 50px;
+  }
+
+  .between-line span {
+    padding: 0 10px;
+  }
+  
+}

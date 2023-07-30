@@ -13,6 +13,16 @@
   z-index: 2;
 }
 
+.img-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+
 .about-hero .img-bg {
   /* background-image: url("../../images/about-bg.jpeg");
   background-repeat: no-repeat;
@@ -57,13 +67,6 @@
 
 .leave-request-hero .img-bg {
   background-image: url("../../images/main-banner.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px 15px 15px 15px;
-  position: relative;
-  overflow: hidden;
-  padding: 30px;
 }
 
 .loft-hero .img-bg {
