@@ -1,34 +1,40 @@
 .float-bar {
-    background: #fff;
-    border-radius: 40px;
-    box-shadow: 0 4px 6px rgba(0,0,0,.25);
-    padding: 15px 20px;
-    position: fixed;
-    bottom: 10%;
-    left: 50%;
-    width: 80%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  padding: 15px 20px;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .chat-btn {
-    background-color: #003057;
-    border: 0;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #003057;
+  border: 0;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    bottom: 20%;
-    right: 5%;
-    position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 20%;
+  right: 5%;
+  position: fixed;
+}
+
+@media screen and (min-width: 796px) {
+  .chat-btn {
+    bottom: 10%;
+  }
 }
 
 .chat-btn img {
-    width: 30px;
+  width: 30px;
 }

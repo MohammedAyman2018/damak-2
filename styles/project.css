@@ -15,16 +15,16 @@
 .between-line {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #fff;
   line-height: 0.1em;
   margin: 10px 0 20px;
   font-size: 20px;
 }
 
 .between-line span {
-  background: #fff;
+  background: #292929;
   padding: 0 60px;
-  color: #474747;
+  color: #fff;
 }
 
 
@@ -53,3 +53,41 @@
   }
   
 }
+
+.layouts .nav-item .nav-link:hover {
+  color: white !important
+}
+
+
+.layout-card {
+  width: 700px;
+  background-color: white;
+}
+
+.layout-card .layout-design {
+  box-shadow: 0 4px 20px rgba(0,0,0,.25)
+}
+
+@media screen and (max-width: 768px) {
+  .layout-card .layout-design img {
+    height: 300px;
+  }
+}
+
+.layout-card .details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.layout-card .details hr {
+  width: 100%;
+}
+
+.layout-card .details-list p img {
+  width: 30px;
+  height: 30px;
+}
+
