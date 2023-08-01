@@ -91,3 +91,7 @@
   height: 30px;
 }
 
+.elementor-icon-box-wrapper h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}

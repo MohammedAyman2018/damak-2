@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 
 .chat-btn {
@@ -27,6 +28,7 @@
   bottom: 20%;
   right: 5%;
   position: fixed;
+  z-index: 99;
 }
 
 @media screen and (min-width: 796px) {
