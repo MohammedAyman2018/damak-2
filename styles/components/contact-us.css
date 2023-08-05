@@ -1,0 +1,23 @@
+.contact-us {}
+
+.conact-card {}
+
+.contact-card-img {
+    position: relative;
+}
+
+.contact-card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.layout-design.contact-card-img {
+    background-image: url('../../images/connect.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
