@@ -1155,6 +1155,112 @@
           </div>
         </div>
       </section>
+
+      <!-- contact us -->
+      <section class="contact-us">
+        <div class="container">
+          <div class="layout-card mx-auto rounded-5">
+            <div class="row">
+              <div
+                class="layout-design contact-card-img rounded-5 col-md-6 p-4"
+              >
+                <div class="d-flex flex-column justify-content-around">
+                  <h2 class="text-primary fw-bold my-3">
+                    Choose an apartment and find out the exact price
+                  </h2>
+                  <p class="mb-3 text-white">
+                    Choose the option of buying an apartment that interests you
+                    using the form. Click send and we will contact you.
+                    <br />
+                    Our manager will provide detailed information upon your
+                    request!
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 p-4">
+                <div class="details d-flex flex-column justify-content-around">
+                  <form id="contactUsForm" method="POST" action="https://script.google.com/macros/s/AKfycbyseYBoiDcNIIFZtZ_Tnt_WcI0AdDCTbtn3GBvgI2m_UGtD2Ay0zpGJ3A8tIPp8/exec">
+                    <!-- start Form control -->
+                    <div class="mb-3">
+                      <label for="num-bedroom" class="form-label">
+                        Number of bedrooms
+                      </label>
+                      <select
+                        class="form-select"
+                        id="num-bedroom"
+                        name="num-bedroom"
+                        aria-label="Number of bedrooms"
+                      >
+                        <option selected>Choose Number of bedrooms</option>
+                        <option value="Studio">Studio</option>
+                        <option value="1 bedroom">1 bedroom</option>
+                        <option value="2 bedroom">2 bedroom</option>
+                        <option value="3 bedroom">3 bedroom</option>
+                      </select>
+                    </div>
+                    <!-- end Form control -->
+
+                    <!-- start Form control -->
+                    <div class="mb-3">
+                      <label for="purchase-option" class="form-label">
+                        Purchase option
+                      </label>
+                      <select
+                        class="form-select"
+                        id="purchase-option"
+                        name="purchase-option"
+                        aria-label="Puchase Option"
+                      >
+                        <option selected>Choose Puchase Option</option>
+                        <option value="key-handover">Key handover</option>
+                        <option value="kre-sale">Pre sale</option>
+                        <option value="Construction">Construction</option>
+                      </select>
+                    </div>
+                    <!-- end Form control -->
+
+                    <!-- start Form control -->
+                    <div class="mb-3">
+                      <label for="purchase-option" class="form-label">
+                        Name
+                      </label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        class="mb-3"
+                        name="username"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <!-- end Form control -->
+
+                    <!-- start Form control -->
+                    <div class="mb-3">
+                      <label for="purchase-option" class="form-label">
+                        Phone number
+                      </label>
+                      <input
+                        class="form-control"
+                        id="phone"
+                        data-sa="phone-plugin"
+                        name="phone"
+                        type="tel"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <!-- end Form control -->
+
+                    <button class="send">
+                      send
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="float-bar d-flex d-md-none">
