@@ -2,10 +2,12 @@
 $(document).ready(function () {
   AOS.init();
   const input = document.querySelector("#phone");
+  const input2 = document.querySelector("[data-sa='phone-plugin']");
   window.intlTelInput(input);
+  input2 && window.intlTelInput(input2);
 
   $('.projects-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: true,
