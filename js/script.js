@@ -4,10 +4,10 @@ $(document).ready(function () {
   const input = document.querySelector("#phone");
   const input2 = document.querySelector("[data-sa='phone-plugin']");
   window.intlTelInput(input);
-  window.intlTelInput(input2);
+  input2 && window.intlTelInput(input2);
 
   $('.projects-slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: true,
