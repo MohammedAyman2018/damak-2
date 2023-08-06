@@ -31,6 +31,27 @@ $(document).ready(function () {
         }
       },
     ]
-  }); 
+  });
+
+  const form1 = document.getElementById('contactUsForm');
+  const form2 = document.getElementById('saleModel');
+
+  form1 && form1.addEventListener("submit", (e) => submitForm(e, form1));
+  form2.addEventListener("submit", (e) => submitForm(e, form2));
+
 
 });
+
+function submitForm(e, form) {
+  e.preventDefault();
+  const data = new FormData(form);
+  const action = e.target.action;
+  fetch(action, {
+    method: 'POST',
+    body: data,
+  })
+    .then(() => {
+      alert("Success!");
+      form.reset()
+    })
+}

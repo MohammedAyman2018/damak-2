@@ -1153,11 +1153,20 @@
             </h1>
             <p>Please leave your contact information.</p>
 
-            <form action="">
-              <input type="text" class="mb-3" placeholder="Name" />
-              <input id="phone" type="tel" placeholder="Phone number" />
+            <form
+              id="saleModel"
+              action="https://script.google.com/macros/s/AKfycbxXefV5cz8-0TyV8oKufp4AJa-FxayMiqV5yiz4VkMXYUrGwAyjkyY9OHkeLx3N5lE/exec"
+              method="POST"
+            >
+              <input type="text" name="name" class="mb-3" placeholder="Name" />
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+              />
 
-              <button type="button" class="mt-3 send">Send</button>
+              <button type="submit" class="mt-3 send">Send</button>
             </form>
           </div>
         </div>
