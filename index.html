@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar bg-transparent navbar-expand-lg" data-bs-theme="dark">
       <div class="container">
         <ul
           class="d-none d-lg-flex navbar-nav justify-content-start flex-grow-1 pe-3"
@@ -268,7 +268,50 @@
       </div>
     </nav>
 
+    <section class="search-section position-relative">
+        <img class="w-100 h-100" src="./images/homepage_search_image.jpg" alt="search-section-bg">
+        <div class="submit-request-wrapper">
+        <div class="container">
+            <p class="text-white fs-3 text-center">Submit Request</p>
+            <form id="submitRequestForm" method="POST" action="https://script.google.com/macros/s/AKfycbzVa3UCRn2J6ExQNgadPxTjV4Z946WYAZWac5rxNIGw714Ay15AtnouZK5F5_J0a24/exec" class="justify-content-lg-center row g-3">
+              <div class="col-auto">
+                <select class="form-select" required name="request-type" aria-label="Sale">
+                  <option value="sale" selected>Sale</option>
+                </select>
+              </div>
+              <div class="col-auto">
+                <select class="form-select" required name="property-type" aria-label="Default select example">
+                  <option value="studios">Studios</option>
+                  <option value="appartments" selected>Appartments</option>
+                  <option value="villas">Villas</option>
+                </select>
+              </div>
+              <div class="col-auto">
+                <input required type="tel" class="form-control" name="phone" placeholder="phone number">
+              </div>
+              <div class="col-auto">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">max.</span>
+                  <input required type="number" class="form-control" name="max-budget" placeholder="Budget">
+                  <span class="input-group-text">€</span>
+                </div>
+              </div>
+              <div class="col-auto">
+                <input required class="form-control" name="property-id" placeholder="ID">
+              </div>
+              <div class="col-auto">
+                <input required class="form-control" name="property-details" placeholder="Project name,zone...">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Submit Request</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </section>
+
     <main class="pt-5">
+
       <section class="hero" data-aos="fade-up">
         <div class="container">
           <div class="img-bg">
@@ -318,70 +361,94 @@
           <h2 class="main-heading mb-5">Featured Projects</h2>
           <div class="projects-slider">
             <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
+              <a
+                href="/projects/damac/safa_two_by_damac/index.html"
+                class="project-card"
+                data-aos="fade-up"
+              >
                 <img
                   class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
+                  src="./projects/damac/safa_two_by_damac/images/hero-img.webp"
                   alt="Elvira"
                 />
                 <div class="d-flex flex-column justify-content-between h-100">
                   <div class="badges p-4">
                     <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
+                      <img
+                        style="display: inline"
+                        src="./images/geo-alt-white.svg"
+                        alt="location icon"
+                      />
+
+                      Safa two
                     </span>
                     <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
+                      >Damac</span
                     >
                   </div>
 
                   <div class="project-card-footer p-4">
-                    <span>Elvira</span>
+                    <span>Safa Two</span>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
+
+            <!-- End One Card -->
+            <div class="projects-slider-slide">
+              <a
+                href="./projects/damac/damac-bay-2-by-cavalli/index.html"
+                class="project-card"
+                data-aos="fade-up"
+              >
+                <img
+                  class="project-card-cover"
+                  src="./projects/damac/damac-bay-2-by-cavalli/images/hero-img.webp"
+                  alt="Elvira"
+                />
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div class="badges p-4">
+                    <span class="badge text-bg-secondary">
+                      <img
+                        style="display: inline"
+                        src="./images/geo-alt-white.svg"
+                        alt="location icon"
+                      />
+                      Dubai Harbour
+                    </span>
+                    <span class="badge text-bg-light text-primary fs-5"
+                      >Damac</span
+                    >
+                  </div>
+
+                  <div class="project-card-footer p-4">
+                    <span>DAMAC Bay 2</span>
+                  </div>
+                </div>
+              </a>
             </div>
             <!-- End One Card -->
             <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
+              <a
+                href="./projects/AZIZI/azizi-riviera/index.html"
+                class="project-card"
+                data-aos="fade-up"
+              >
                 <img
                   class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
+                  src="./projects/AZIZI/azizi-riviera/images/hero-img.webp"
                   alt="Elvira"
                 />
                 <div class="d-flex flex-column justify-content-between h-100">
                   <div class="badges p-4">
                     <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
+                      <img
+                        style="display: inline"
+                        src="./images/geo-alt-white.svg"
+                        alt="location icon"
+                      />
+
+                      MBR City
                     </span>
                     <span class="badge text-bg-light text-primary fs-5"
                       >EMAAR</span
@@ -389,283 +456,113 @@
                   </div>
 
                   <div class="project-card-footer p-4">
-                    <span>Elvira</span>
+                    <span>Azizi Riviera</span>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
+            <!-- End One Card -->
+
+            <div class="projects-slider-slide">
+              <a
+                href="./projects/emaar/seapoint/index.html"
+                class="project-card"
+                data-aos="fade-up"
+              >
+                <img
+                  class="project-card-cover"
+                  src="./projects/emaar/seapoint/images/hero-img.webp"
+                  alt="Elvira"
+                />
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div class="badges p-4">
+                    <span class="badge text-bg-secondary">
+                      <img
+                        style="display: inline"
+                        src="./images/geo-alt-white.svg"
+                        alt="location icon"
+                      />
+
+                      Emaar Beachfront
+                    </span>
+                    <span class="badge text-bg-light text-primary fs-5"
+                      >EMAAR</span
+                    >
+                  </div>
+
+                  <div class="project-card-footer p-4">
+                    <span>Seapoint</span>
+                  </div>
+                </div>
+              </a>
             </div>
             <!-- End One Card -->
             <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
+              <a
+                href="./projects/damac/ibiza-damac-lagoons/index.html"
+                class="project-card"
+                data-aos="fade-up"
+              >
                 <img
                   class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
+                  src="./projects/damac/ibiza-damac-lagoons/images/hero-img.webp"
                   alt="Elvira"
                 />
                 <div class="d-flex flex-column justify-content-between h-100">
                   <div class="badges p-4">
                     <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
+                      <img
+                        style="display: inline"
+                        src="./images/geo-alt-white.svg"
+                        alt="location icon"
+                      />
+
+                      Damac lagoons
                     </span>
                     <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
+                      >Damac</span
                     >
                   </div>
 
                   <div class="project-card-footer p-4">
-                    <span>Elvira</span>
+                    <span>Ibiza DAMAC Lagoons</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <!-- End One Card -->
             <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
+              <a
+                href="./projects/sobha/Marina/index.html"
+                class="project-card"
+                data-aos="fade-up"
+              >
                 <img
                   class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
+                  src="./projects/sobha/Marina/images/hero-img.webp"
                   alt="Elvira"
                 />
                 <div class="d-flex flex-column justify-content-between h-100">
                   <div class="badges p-4">
                     <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
+                      <img
+                        style="display: inline"
+                        src="./images/geo-alt-white.svg"
+                        alt="location icon"
+                      />
+
+                      Dubai Marina
                     </span>
                     <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
+                      >Sobha</span
                     >
                   </div>
 
                   <div class="project-card-footer p-4">
-                    <span>Elvira</span>
+                    <span>Marina</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- End One Card -->
-            <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
-                <img
-                  class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
-                  alt="Elvira"
-                />
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <div class="badges p-4">
-                    <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
-                    </span>
-                    <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
-                    >
-                  </div>
-
-                  <div class="project-card-footer p-4">
-                    <span>Elvira</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End One Card -->
-            <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
-                <img
-                  class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
-                  alt="Elvira"
-                />
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <div class="badges p-4">
-                    <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
-                    </span>
-                    <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
-                    >
-                  </div>
-
-                  <div class="project-card-footer p-4">
-                    <span>Elvira</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End One Card -->
-            <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
-                <img
-                  class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
-                  alt="Elvira"
-                />
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <div class="badges p-4">
-                    <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
-                    </span>
-                    <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
-                    >
-                  </div>
-
-                  <div class="project-card-footer p-4">
-                    <span>Elvira</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End One Card -->
-            <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
-                <img
-                  class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
-                  alt="Elvira"
-                />
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <div class="badges p-4">
-                    <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
-                    </span>
-                    <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
-                    >
-                  </div>
-
-                  <div class="project-card-footer p-4">
-                    <span>Elvira</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End One Card -->
-            <div class="projects-slider-slide">
-              <div class="project-card" data-aos="fade-up">
-                <img
-                  class="project-card-cover"
-                  src="./images/projects/Elvira-cover.jpg"
-                  alt="Elvira"
-                />
-                <div class="d-flex flex-column justify-content-between h-100">
-                  <div class="badges p-4">
-                    <span class="badge text-bg-secondary">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="white"
-                        class="bi bi-geo-alt"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
-                        />
-                        <path
-                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                        />
-                      </svg>
-                      Dubai Hills
-                    </span>
-                    <span class="badge text-bg-light text-primary fs-5"
-                      >EMAAR</span
-                    >
-                  </div>
-
-                  <div class="project-card-footer p-4">
-                    <span>Elvira</span>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
             <!-- End One Card -->
           </div>
@@ -688,17 +585,15 @@
                   <span class="fw-light text-primary">
                     RIZESCU REAL ESTATE L.L.C </span
                   >David Rizescu developed the upscale real estate firm RIZESCU
-                  REALESTATE, which is run by Luminita Rizescu and Michael
-                  Rizescu and holds a dominant position in Dubai market. We
-                  provide a high level of service, comprehensive customer
+                  REALESTATE, which holds a dominant position in Dubai market.
+                  We provide a high level of service, comprehensive customer
                   support, and collaborate with the greatest specialists in the
                   real estate industry as a worldwide organization with offices
-                  and more than 150 employees. International clients are
-                  assisted by RIZESCU REALESTATE DUBAI in locating the greatest
-                  homes for purchase, sale, and investment. Numerous client
-                  testimonials have inspired us to continuously raise our
-                  service standards and exhibit European norms. Our business
-                  collaborates with prestigious developers like Emaar,
+                  around the world. International clients are assisted by
+                  RIZESCU REALESTATE DUBAI in acquiring the safest homes for,
+                  sale, and investment. Numerous client testimonials have
+                  inspired us to continuously raise our service standards. Our
+                  business collaborates with prestigious developers like Emaar,
                   Nakheel,SOBHA,AZIZI,HEART OF EUROPE, and DAMAC, which enables
                   us to be the first to learn about the most exclusive offerings
                 </p>

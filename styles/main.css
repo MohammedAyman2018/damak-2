@@ -37,3 +37,11 @@ body, .accordion-body, .accordion-button, .modal-content {
 .nav-link, .main-heading, .accordion-button, .modal-content, .accordion-body, footer * {
   color: white
 }
+
+.submit-request-wrapper {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  background-color: #003057;
+}

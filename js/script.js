@@ -35,9 +35,11 @@ $(document).ready(function () {
 
   const form1 = document.getElementById('contactUsForm');
   const form2 = document.getElementById('saleModel');
+  const form3 = document.getElementById('submitRequestForm');
 
   form1 && form1.addEventListener("submit", (e) => submitForm(e, form1));
   form2.addEventListener("submit", (e) => submitForm(e, form2));
+  form3 && form3.addEventListener("submit", (e) => submitForm(e, form3));
 
 
 });
