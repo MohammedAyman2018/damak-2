@@ -269,49 +269,91 @@
     </nav>
 
     <section class="search-section position-relative">
-        <img class="w-100 h-100" src="./images/homepage_search_image.jpg" alt="search-section-bg">
-        <div class="submit-request-wrapper">
+      <img
+        class="w-100 h-100"
+        src="./images/homepage_search_image.jpg"
+        alt="search-section-bg"
+      />
+      <div class="submit-request-wrapper">
         <div class="container">
-            <p class="text-white fs-3 text-center">Submit Request</p>
-            <form id="submitRequestForm" method="POST" action="https://script.google.com/macros/s/AKfycbzVa3UCRn2J6ExQNgadPxTjV4Z946WYAZWac5rxNIGw714Ay15AtnouZK5F5_J0a24/exec" class="justify-content-lg-center row g-3">
-              <div class="col-auto">
-                <select class="form-select" required name="request-type" aria-label="Sale">
-                  <option value="sale" selected>Sale</option>
-                </select>
+          <p class="text-white fs-3 text-center">Submit Request</p>
+          <form
+            id="submitRequestForm"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbzVa3UCRn2J6ExQNgadPxTjV4Z946WYAZWac5rxNIGw714Ay15AtnouZK5F5_J0a24/exec"
+            class="justify-content-lg-center row g-3"
+          >
+            <div class="col-auto">
+              <select
+                class="form-select"
+                required
+                name="request-type"
+                aria-label="Sale"
+              >
+                <option value="sale" selected>Sale</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <select
+                class="form-select"
+                required
+                name="property-type"
+                aria-label="Default select example"
+              >
+                <option value="studios">Studios</option>
+                <option value="appartments" selected>Appartments</option>
+                <option value="villas">Villas</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <input
+                required
+                type="tel"
+                class="form-control"
+                name="phone"
+                placeholder="phone number"
+              />
+            </div>
+            <div class="col-auto">
+              <div class="input-group mb-3">
+                <span class="input-group-text">max.</span>
+                <input
+                  required
+                  type="number"
+                  class="form-control"
+                  name="max-budget"
+                  placeholder="Budget"
+                />
+                <span class="input-group-text">€</span>
               </div>
-              <div class="col-auto">
-                <select class="form-select" required name="property-type" aria-label="Default select example">
-                  <option value="studios">Studios</option>
-                  <option value="appartments" selected>Appartments</option>
-                  <option value="villas">Villas</option>
-                </select>
-              </div>
-              <div class="col-auto">
-                <input required type="tel" class="form-control" name="phone" placeholder="phone number">
-              </div>
-              <div class="col-auto">
-                <div class="input-group mb-3">
-                  <span class="input-group-text">max.</span>
-                  <input required type="number" class="form-control" name="max-budget" placeholder="Budget">
-                  <span class="input-group-text">€</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <input required class="form-control" name="property-id" placeholder="ID">
-              </div>
-              <div class="col-auto">
-                <input required class="form-control" name="property-details" placeholder="Project name,zone...">
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Submit Request</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="col-auto">
+              <input
+                required
+                class="form-control"
+                name="property-id"
+                placeholder="ID"
+              />
+            </div>
+            <div class="col-auto">
+              <input
+                required
+                class="form-control"
+                name="property-details"
+                placeholder="Project name,zone..."
+              />
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">
+                Submit Request
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
 
     <main class="pt-5">
-
       <section class="hero" data-aos="fade-up">
         <div class="container">
           <div class="img-bg">
@@ -610,32 +652,56 @@
           <h3 class="main-heading mb-5">Dubai Developers</h3>
           <div class="row">
             <div class="col-lg-4 col-md-6">
-              <a href="./developers/emmar.html" class="img-wrapper" data-aos="zoom-in">
+              <a
+                href="./developers/emmar.html"
+                class="img-wrapper"
+                data-aos="zoom-in"
+              >
                 <img src="./images/developers/Emmar.svg" alt="Emmar" />
               </a>
             </div>
             <div class="col-lg-4 col-md-6">
-              <a href="./developers/nakheel.html" class="img-wrapper" data-aos="zoom-in">
+              <a
+                href="./developers/nakheel.html"
+                class="img-wrapper"
+                data-aos="zoom-in"
+              >
                 <img src="./images/developers/Nakheel.svg" alt="Nakheel" />
               </a>
             </div>
             <div class="col-lg-4 col-md-6">
-              <a href="./developers/azizi.html" class="img-wrapper" data-aos="zoom-in">
+              <a
+                href="./developers/azizi.html"
+                class="img-wrapper"
+                data-aos="zoom-in"
+              >
                 <img src="./images/developers/azizi.svg" alt="azizi" />
               </a>
             </div>
             <div class="col-lg-4 col-md-6">
-              <a href="./developers/damac.html" class="img-wrapper" data-aos="zoom-in">
+              <a
+                href="./developers/damac.html"
+                class="img-wrapper"
+                data-aos="zoom-in"
+              >
                 <img src="./images/developers/Damac.svg" alt="Damac" />
               </a>
             </div>
             <div class="col-lg-4 col-md-6">
-              <a href="./developers/hoe.html" class="img-wrapper" data-aos="zoom-in">
+              <a
+                href="./developers/hoe.html"
+                class="img-wrapper"
+                data-aos="zoom-in"
+              >
                 <img src="./images/developers/hoe.png" alt="hoe" />
               </a>
             </div>
             <div class="col-lg-4 col-md-6">
-              <a href="./developers/sobha.html" class="img-wrapper" data-aos="zoom-in">
+              <a
+                href="./developers/sobha.html"
+                class="img-wrapper"
+                data-aos="zoom-in"
+              >
                 <img src="./images/developers/sobha.png" alt="sobha" />
               </a>
             </div>
@@ -898,14 +964,19 @@
 
     <footer class="py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row gy-3">
+          <div class="col-lg-3">
             <div>
               <img width="250" src="./images/logo.png" alt="logo" />
             </div>
           </div>
+          <div class="col-lg-3 d-flex flex-column justify-content-center">
+            <h3 class="main-heading mb-3">Links</h3>
+            <a href="/Terms-&-Conditions.html">Terms & Conditions</a>
+            <a href="/Privacy-&-Policy.html">Privacy & Policy</a>
+          </div>
           <div
-            class="d-flex flex-column justify-content-center col-lg-4 mb-3 mb-lg-0"
+            class="d-flex flex-column justify-content-center col-lg-3 mb-3 mb-lg-0"
           >
             <h3 class="main-heading mb-3">Follow us</h3>
             <div class="d-flex gap-2">
@@ -925,14 +996,32 @@
               </a>
             </div>
           </div>
-          <div class="d-flex flex-column justify-content-center col-lg-4">
+          <div class="d-flex flex-column justify-content-center col-lg-3">
             <h3 class="main-heading mb-3">About Site</h3>
             <small>
               We're reimagining how you buy, sell and rent. It's now easier to
               get into a place you love. So let's do this, together.
             </small>
+            <hr />
+            <h3 class="main-heading mb-3">Contact Us</h3>
+            <p class="p-0 mb-1 fw-bold">Address:</p>
+            <span> Single Business Tower 3113 floor 31</span>
+            <p class="p-0 mb-1 fw-bold">Business Number:</p>
+            <a href="tel:+971 52 689 1658">+971 52 689 1658</a>
           </div>
         </div>
+
+        <p class="text-center mt-5" id="copyright"></p>
+        <script>
+          // Get the current year dynamically
+          const currentYear = new Date().getFullYear();
+
+          // Display the copyright notice
+          document.addEventListener("DOMContentLoaded", () => {
+            const copyrightElement = document.getElementById("copyright");
+            copyrightElement.textContent = `  `;
+          });
+        </script>
       </div>
     </footer>
 
